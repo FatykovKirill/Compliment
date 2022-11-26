@@ -1,0 +1,30 @@
+@import '../../App.styles.scss';
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 100px;
+    }
+
+    .buttons {
+        margin-top: 195px;
+        display: flex;
+        flex-direction: column;
+
+        button {
+            margin-top: 25px;
+            @extend %buttons;
+        }
+
+        button:last-child {
+            background-color: map-get($colors, "extra");
+            color: map-get($colors, "main");
+        }
+    }
+
+}
