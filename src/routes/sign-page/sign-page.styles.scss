@@ -1,0 +1,28 @@
+@import '../../App.styles.scss';
+
+.sign-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        @extend %titles;
+    }
+
+    h2{
+        @extend %subtitles;
+    }
+
+    input{
+        @extend %inputs;
+    }
+
+    .sign-page-username{
+        margin-top: 70px;
+    }
+
+    button{
+        margin-top: 55px;
+        @extend %buttons;
+    }
+}

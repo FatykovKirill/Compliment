@@ -1,0 +1,27 @@
+@import '../../App.styles.scss';
+
+.forgot-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        @extend %titles;
+    }
+
+    h2{
+        @extend %subtitles;
+        width: 540px;
+        margin-top: 20px;
+    }
+
+    input{
+        @extend %inputs;
+        margin-top: 55px;
+    }
+
+    button{
+        @extend %buttons;
+        margin-top: 180px;
+    }
+}
