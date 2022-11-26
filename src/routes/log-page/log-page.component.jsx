@@ -1,3 +1,6 @@
+import { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+
 import './log-page.styles.scss'
 
 const LogPage = () => {
@@ -9,7 +12,7 @@ const LogPage = () => {
             <input className="log-page-email" type="email" name="log-page-email" placeholder="Email or Username" required />
             <label htmlFor="log-page-password"></label>
             <input className="log-page-password" type="password" name="log-page-password" placeholder="Password" required />
-            <a className='log-page-forgot'>Forgot it?</a>
+            <Link className='log-page-forgot' to='/forgot'>Forgot it?</Link>
             <button>Log in</button>
         </div>
     )
